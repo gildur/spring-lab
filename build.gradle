@@ -51,6 +51,8 @@ dependencies {
     testCompile "org.springframework.boot:spring-boot-starter-test"
     testCompile "org.spockframework:spock-core:${SPOCK_VERSION}"
     testCompile "org.spockframework:spock-spring:${SPOCK_VERSION}"
+
+    integrationTestCompile "org.springframework.boot:spring-boot-starter-data-jpa"
 }
 
 task integrationTest(type: Test) {
